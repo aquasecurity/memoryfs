@@ -24,7 +24,7 @@ import (
     "fmt"
     "io/fs"
 
-    "github.com/liamg/memoryfs"
+    "github.com/aquasecurity/memoryfs"
 )
 
 func main() {
@@ -50,5 +50,5 @@ func main() {
 
 ## Lazy Loading
 
-If you are mirroring a disk file-system in memory, it can become very inefficient when large files are in use. For this scenario, the [WriteLazyFile](https://pkg.go.dev/github.com/liamg/memoryfs#FS.WriteLazyFile) method is recommended. It allows you to add a file whose content will be provided on-demand by calling the [LazyOpener](https://pkg.go.dev/github.com/liamg/memoryfs#LazyOpener) function.
+If you are mirroring a disk file-system in memory, it can become very inefficient when large files are in use. For this scenario, the [WriteLazyFile](https://pkg.go.dev/github.com/aquasecurity/memoryfs#FS.WriteLazyFile) method is recommended. It allows you to add a file whose content will be provided on-demand by calling the [LazyOpener](https://pkg.go.dev/github.com/aquasecurity/memoryfs#LazyOpener) function.
 

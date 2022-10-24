@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/fs"
 
-	"github.com/liamg/memoryfs"
+	"github.com/aquasecurity/memoryfs"
 )
 
 func main() {

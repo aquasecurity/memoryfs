@@ -1,4 +1,4 @@
-module github.com/liamg/memoryfs
+module github.com/aquasecurity/memoryfs
 
 go 1.17
 
