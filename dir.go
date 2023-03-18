@@ -196,7 +196,7 @@ func (d *dir) MkdirAll(path string, perm fs.FileMode) error {
 				size:     0x100,
 				modified: time.Now(),
 				isDir:    true,
-				mode:     perm,
+				mode:     perm | fs.ModeDir,
 			},
 			dirs:  map[string]*dir{},
 			files: map[string]*file{},
